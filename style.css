@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'cheltenham';
+    src: url(./fonts/cheltenham-normal-500.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+  
+  @font-face {
+    font-family: 'cheltenham';
+    src: url(./fonts/cheltenham-normal-700.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+  
+  @font-face {
+    font-family: 'franklin';
+    src: url(./fonts/franklin-normal-500.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+  
+  @font-face {
+    font-family: 'franklin';
+    src: url(./fonts/franklin-normal-700.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+  
+  @font-face {
+    font-family: 'imperial';
+    src: url(./fonts/imperial-normal-500.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+  
+  @font-face {
+    font-family: 'imperial';
+    src: url(./fonts/imperial-normal-700.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Global style */
+
+*,
+*::before
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+}
+
+html {
+    font-size: 10px;
+}
+
+/**  HEADER **/
+
+.header-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    max-width: 1600px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.menu-btn {
+    padding: 5px;
+    border: 0;
+    background: none;
+}
+
+header .menu-btn:nth-child(2) {
+    margin: 0 20px 0 10px;
+}
+
+.icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: center no-repeat;
+    background-size: cover;
+}
+
+.i-menu {
+    background-image: url(./images/menu.svg);
+    cursor: pointer;
+}
+
+.i-search {
+    background-image: url(./images/magnify.svg);
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.logo svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-link {
+    font-family: franklin;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    height: 32px;
+    padding: 0 10px;
+    font-family: franklin;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1rem; 
+    background: rgb(86, 123, 149);
+    border: 1px solid rgb(50, 104, 145);
+    border-radius: 3px;
+    color: white;
+}
+
+header .btn:last-child {
+    margin-left: 10px;
+}
