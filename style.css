@@ -367,3 +367,135 @@ aside,
     color: rgb(50, 104, 145);
     text-decoration: none;
 }
+
+.article-subheading {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    font-family: imperial;
+    color: rgb(51,51,51);
+}
+
+.embedded-post {
+    grid-column: 1 / -1;
+    padding: 0px 12rem;
+}
+
+.embedded-post .article-subheading {
+    padding: 1rem 0 0.5rem 2rem;
+    font-family: cheltenham;
+    color: #000;
+}
+
+.fact-post {
+    padding-right: 12rem;
+    padding-left: 2rem;
+    font-family: cheltenham;
+    font-size: 1.4rem;
+    color: rgb(102, 102, 102);
+}
+
+.grid-items {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+}
+
+.grid-items figure {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-items figure img {
+    width: 100%;
+}
+
+.grid-items i {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+    height: 150px;
+    background: url(https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png);
+    background-size: 945px;
+}
+
+.i-not-enough-time {
+    background-position-x: -232px !important;
+}
+  
+.i-distant-coffee {
+    background-position-x: -472px !important;
+}
+  
+.i-coffee-everywhere {
+    background-position-x: -716px !important;
+}
+  
+.i-still-not-enough-time {
+    background-position-y: 300px !important;
+}
+  
+.i-inflation {
+    background-position: -232px 300px !important;
+}
+  
+.i-fluctuation {
+    background-position: -472px 300px !important;
+}
+  
+.i-expansion {
+    background-position: -716px 300px !important;
+}
+
+.grid-items figcaption {
+    font-family: franklin;
+    font-size: 1.4rem;
+    color: rgb(51, 51,51)
+}
+
+.grid-items .caption-title {
+    font-size: 1.1rem;
+    padding-right: 1rem;
+    color: #000;
+    font-weight: 700;
+}
+
+.subpost-authors {
+    padding: 2rem 0 5rem 2rem;
+}
+
+.subpost-authors::before {
+    display: block;
+    margin-bottom: 10px;
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: rgb(51, 51, 51);
+}
+
+.embedded-video iframe {
+    width: 100%;
+    height: 360px;
+}
+
+.caption-title {
+    font-family: imperial;
+    font: 1.5;
+    color: rgb(102, 102, 102);
+}
+
+.embedded-figure {
+    margin-top: 4rem;
+}
+  
+.embedded-figure img {
+    width: 100%;
+}
+
+.embedded-figure figcaption {
+    padding: 1rem 6% 4rem 0;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+    padding: 0px 24rem;
+}
